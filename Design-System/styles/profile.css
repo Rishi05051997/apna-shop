@@ -1,0 +1,78 @@
+/*
+    Author: Vrushabh Dhatrak
+    Release: 0.1
+    Description : Profile CSS
+*/
+/*
+    Author: Vrushabh Dhatrak
+    Release: 0.1
+    Description : Profile CSS
+*/
+.profile_container {
+    margin:0;
+    padding:0;
+    display: grid;
+    height: 100vh;
+    grid-template-columns:1fr;
+    
+    grid-template-areas: 
+    "header"
+    "my_profile_section"
+    "profile_main_section"
+    "footer"
+    ;
+}
+.header_container {
+    grid-column:header;
+}
+
+.my_profile_section {
+    grid-column: my_profile_section;
+    margin: 15rem 0 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile_main_section {
+    margin: 5rem 20rem;
+    grid-column: profile_main_section;
+    display: grid;
+    grid-template-columns:20rem 1fr;
+    grid-template-areas: 
+    "profile-aside profile-section"
+
+
+}
+
+.profile-aside {
+    grid-column:profile-aside;
+    border-right: 1px solid;
+}
+
+.profile-section {
+    grid-column:profile-section;
+    border-top: 1px solid;
+    height: 50vh;
+    overflow-y: auto;
+}
+
+.profile-aside ul li a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.profile-sub-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    all:unset;
+}
+
+.footer {
+    grid-column: footer;
+}

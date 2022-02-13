@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Vrushabh Dhatrak" />
+    <meta
+      name="description"
+      content="Apna Shop a Ecom website which provides a wide variety of Shirts, T-shirts, Party Wear & Formals"
+    />
+    <link rel="stylesheet" href="./Design-System/styles/main.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <script
+      src="https://memorable-ui.netlify.app/script/header.js"
+      defer
+    ></script>
+    <script
+      src="https://memorable-ui.netlify.app/script/navigation.js"
+      defer
+    ></script>
+    <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
+
+    <title>Ecommerce App</title>
+  </head>
+  <body>
+    <div class="landing_page_container">
+      <div class="header_container">
+        <header class="sticky">
+          <img
+            class="img_logo"
+            src="./Design-System/assets/apna-5.PNG"
+            alt="header_logo"
+          />
+          <a href="#" class="logo head-2">Apna Shop </a>
+
+          <div class="toggle" onclick="toggleMenu();"></div>
+          <ul class="menu">
+            <li><a class="text-3" href="#" onclick="toggleMenu();">Home</a></li>
+            <li>
+              <a
+                class="text-3"
+                href="./Design-System/pages/filterPage.html"
+                onclick="toggleMenu();"
+                >Shop Now</a
+              >
+            </li>
+          </ul>
+          <ul class="menu hide">
+            <li>
+              <a
+                onclick="toggleMenu();"
+                class="text-1"
+                href="./../Avatar/avatar.html"
+                >Avatar</a
+              >
+            </li>
+            <li>
+              <a
+                onclick="toggleMenu();"
+                class="text-1"
+                href="./../Alert/Alert.html"
+                >Alert</a
+              >
+            </li>
+          </ul>
+
+          <ul class="menu left_auto">
+            <!--- Input with Icon -->
+            <div class="custom_input_one">
+              <input
+                id="name"
+                type="text"
+                class="input_field"
+                autocomplete="off"
+                placeholder=" "
+              />
+              <span
+                class="iconify icons text-2"
+                data-icon="ant-design:search-outlined"
+              ></span>
+              <label for="name" class="input__label text-2"
+                >Type Here to Search</label
+              >
+            </div>
+            <li>
+              <a href="./Design-System/pages/profilePage.html">
+                <div class="badge_div">
+                  <span
+                    class="iconify"
+                    data-icon="healthicons:ui-user-profile"
+                  ></span>
+                  <div class="text-2">Vrushabh</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="./Design-System/pages/wishlistPage.html">
+                <div class="badge_div">
+                  <span
+                    class="iconify"
+                    data-icon="icon-park-outline:like"
+                  ></span>
+                  <div class="notifyBadge"><span>06</span></div>
+                  <div class="text-2">Wishlist</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="./Design-System/pages/Cart.html">
+                <div class="badge_div">
+                  <span class="iconify" data-icon="bi:cart-check"></span>
+                  <div class="notifyBadge"><span>03</span></div>
+                  <div class="text-2">Cart</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </header>
+      </div>
+      <main>
+        <section class="offers">
+          <div class="text-3 mar-md">
+            Bestsellers at 70% off Offer till
+            <a
+              href="./Design-System/pages/filterPage.html"
+              class="highlightMainText cursor_"
+              >Show Now</a
+            >
+          </div>
+        </section>
+        <section class="banner">
+          <div class="custom_img_responsive">
+            <img src="./Design-System/assets/banner/banner-2 (3).jpg" />
+          </div>
+          <div class="banner_content">
+            <div class="head-1 banner_main_heading highlightMainText">
+              APNA SHOP
+            </div>
+            <div class="head-1 sub_banner_heading highlightMainText">
+              CLEARANCE SALE
+            </div>
+            <div class="head-1 sub_child__banner_heading highlightMainText">
+              UPTO 70% OFF <span class="head-2">on various products</span>
+            </div>
+            <div class="show_now_btn">
+              <button class="btn btn-warning head-3">Shop Now</button>
+            </div>
+          </div>
+        </section>
+        <section class="feature_categories mar-y-3">
+          <div class="head-1 highlightMainText">Featured Categories</div>
+          <div class="feature_cards_section mar-y-3">
+            <div class="container_card md-card-width">
+              <div class="card_header pad-md">
+                <div class="head-2 highlightMainText">T-Shirts</div>
+                <p class="text-2 bold">
+                  We have a great collection of T-shirts
+                </p>
+              </div>
+              <div class="image-div">
+                <img
+                  class="card_img"
+                  src="./Design-System/assets/ladingPage/shirt.png"
+                />
+              </div>
+              <div class="card_body text-3 mar-md">
+                <p class="text-2">
+                  We have winter offer of <span class="bold">70%</span> off.
+                </p>
+              </div>
+              <footer>
+                <div class="card_footer text-2 mar-md">
+                  <button class="btn btn-outline-primary">Read</button>
+                  <button class="btn btn-outline-primary">Bookmark</button>
+                  <span
+                    class="iconify cursor_"
+                    data-icon="icon-park-outline:like"
+                  ></span>
+                  <span class="iconify cursor_" data-icon="ci:share"></span>
+                  <span
+                    class="iconify cursor_"
+                    data-icon="akar-icons:more-vertical-fill"
+                  ></span>
+                </div>
+              </footer>
+              <div class="badge-overlay">
+                <span class="top-right badge red">Sale</span>
+              </div>
+            </div>
+            <div class="container_card md-card-width">
+              <div class="card_header pad-md">
+                <div class="head-2 highlightMainText">Shirts</div>
+                <p class="text-2 bold">We have a great collection of Shirts</p>
+              </div>
+              <div class="image-div">
+                <img
+                  class="card_img"
+                  src="./Design-System/assets/ladingPage/shirt-1.png"
+                />
+              </div>
+              <div class="card_body text-3 mar-md">
+                <p class="text-2">
+                  We have winter offer of <span class="bold">70%</span> off.
+                </p>
+              </div>
+              <footer>
+                <div class="card_footer text-2 mar-md">
+                  <button class="btn btn-outline-primary">Read</button>
+                  <button class="btn btn-outline-primary">Bookmark</button>
+                  <span
+                    class="iconify cursor_"
+                    data-icon="icon-park-outline:like"
+                  ></span>
+                  <span class="iconify cursor_" data-icon="ci:share"></span>
+                  <span
+                    class="iconify cursor_"
+                    data-icon="akar-icons:more-vertical-fill"
+                  ></span>
+                </div>
+              </footer>
+              <div class="badge-overlay">
+                <span class="top-right badge orange">Sale</span>
+              </div>
+            </div>
+            <div class="container_card md-card-width">
+              <div class="card_header pad-md">
+                <div class="head-2 highlightMainText">Formals</div>
+                <p class="text-2 bold">We have a great collection of Formals</p>
+              </div>
+              <div class="image-div">
+                <img
+                  class="card_img"
+                  src="./Design-System/assets/ladingPage/formal.png"
+                />
+              </div>
+              <div class="card_body text-3 mar-md">
+                <p class="text-2">
+                  We have winter offer of <span class="bold">70%</span> off.
+                </p>
+              </div>
+              <footer>
+                <div class="card_footer text-2 mar-md">
+                  <button class="btn btn-outline-primary">Read</button>
+                  <button class="btn btn-outline-primary">Bookmark</button>
+                  <span
+                    class="iconify cursor_"
+                    data-icon="icon-park-outline:like"
+                  ></span>
+                  <span class="iconify cursor_" data-icon="ci:share"></span>
+                  <span
+                    class="iconify cursor_"
+                    data-icon="akar-icons:more-vertical-fill"
+                  ></span>
+                </div>
+              </footer>
+              <div class="badge-overlay">
+                <span class="top-right badge green">Sale</span>
+              </div>
+            </div>
+            <div class="container_card md-card-width">
+              <div class="card_header pad-md">
+                <div class="head-2 highlightMainText">Party Wear</div>
+                <p class="text-2 bold">
+                  We have a great collection of Party Wear fancy collection.
+                </p>
+              </div>
+              <div class="image-div">
+                <img
+                  class="card_img"
+                  src="./Design-System/assets/ladingPage/party-wear.png"
+                />
+              </div>
+              <div class="card_body text-3 mar-md">
+                <p class="text-2">
+                  We have winter offer of <span class="bold">70%</span> off.
+                </p>
+              </div>
+              <footer>
+                <div class="card_footer text-2 mar-md">
+                  <button class="btn btn-outline-primary">Read</button>
+                  <button class="btn btn-outline-primary">Bookmark</button>
+                  <span
+                    class="iconify cursor_"
+                    data-icon="icon-park-outline:like"
+                  ></span>
+                  <span class="iconify cursor_" data-icon="ci:share"></span>
+                  <span
+                    class="iconify cursor_"
+                    data-icon="akar-icons:more-vertical-fill"
+                  ></span>
+                </div>
+              </footer>
+              <div class="badge-overlay">
+                <span class="top-right badge pink">Sale</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="feature_brands mar-y-3">
+          <div class="head-1 highlightMainText">Featured Brands</div>
+          <div class="brand_img_div mar-y-3">
+            <div class="basic_img_responsive_three_column">
+              <img src="./Design-System/assets/brands/reymond.png" />
+              <img src="./Design-System/assets/brands/spykar.png" />
+              <img src="./Design-System/assets/brands/levis.png" />
+            </div>
+          </div>
+        </section>
+        <section class="testimonials mar-y-3">
+          <div class="head-1 highlightMainText">Testimonials</div>
+          <div class="testimonials_cards mar-y-3">
+            <div class="container_card sm-card-width">
+              <div class="card_header card_badge" data-label="Nice">
+                <div class="image-div">
+                  <img
+                    class="card_img"
+                    src="./Design-System/assets/customers/sidh.jpg"
+                  />
+                </div>
+
+                <div class="sub_card_header">
+                  <div class="head-2 highlightMainText">Siddhu</div>
+                  <p class="text-3 bold">Engineer</p>
+                </div>
+              </div>
+              <div class="card_body text-2 mar-md">Great Experience</div>
+              <footer>
+                <div class="card_footer text-2 mar-sm">
+                  <button class="btn-link">Read</button>
+                  <button class="btn-link">Bookmark</button>
+                  <span
+                    class="iconify cursor_"
+                    data-icon="icon-park-outline:like"
+                  ></span>
+                  <span class="iconify cursor_" data-icon="ci:share"></span>
+                  <span
+                    class="iconify cursor_"
+                    data-icon="akar-icons:more-vertical-fill"
+                  ></span>
+                </div>
+              </footer>
+            </div>
+            <div class="container_card sm-card-width">
+              <div class="card_header card_badge" data-label="Great Exp..">
+                <div class="image-div">
+                  <img
+                    class="card_img"
+                    src="./Design-System/assets/customers/shashank.jpg"
+                  />
+                </div>
+
+                <div class="sub_card_header">
+                  <div class="head-2 highlightMainText">Shashank</div>
+                  <p class="text-3 bold">Engineer @Germany</p>
+                </div>
+              </div>
+              <div class="card_body text-2 mar-md">Always Friendly Website</div>
+              <footer>
+                <div class="card_footer text-2 mar-sm">
+                  <button class="btn-link">Read</button>
+                  <button class="btn-link">Bookmark</button>
+                  <span
+                    class="iconify cursor_"
+                    data-icon="icon-park-outline:like"
+                  ></span>
+                  <span class="iconify cursor_" data-icon="ci:share"></span>
+                  <span
+                    class="iconify cursor_"
+                    data-icon="akar-icons:more-vertical-fill"
+                  ></span>
+                </div>
+              </footer>
+            </div>
+            <div class="container_card sm-card-width">
+              <div class="card_header card_badge" data-label="Good Del.">
+                <div class="image-div">
+                  <img
+                    class="card_img"
+                    src="./Design-System/assets/customers/vaibhav.jpg"
+                  />
+                </div>
+
+                <div class="sub_card_header">
+                  <div class="head-2 highlightMainText">Vaibhav</div>
+                  <p class="text-3 bold">Consultant @Infosys</p>
+                </div>
+              </div>
+              <div class="card_body text-2 mar-md">
+                Always Have new Varieties
+              </div>
+              <footer>
+                <div class="card_footer text-2 mar-sm">
+                  <button class="btn-link">Read</button>
+                  <button class="btn-link">Bookmark</button>
+                  <span
+                    class="iconify cursor_"
+                    data-icon="icon-park-outline:like"
+                  ></span>
+                  <span class="iconify cursor_" data-icon="ci:share"></span>
+                  <span
+                    class="iconify cursor_"
+                    data-icon="akar-icons:more-vertical-fill"
+                  ></span>
+                </div>
+              </footer>
+            </div>
+            <div class="container_card sm-card-width">
+              <div class="card_header card_badge" data-label="Cool">
+                <div class="image-div">
+                  <img
+                    class="card_img"
+                    src="./Design-System/assets/customers/akshay.jpg"
+                  />
+                </div>
+
+                <div class="sub_card_header">
+                  <div class="head-2 highlightMainText">Akshay</div>
+                  <p class="text-3 bold">PHD</p>
+                </div>
+              </div>
+              <div class="card_body text-2 mar-md">Wow it's awesome</div>
+              <footer>
+                <div class="card_footer text-2 mar-sm">
+                  <button class="btn-link">Read</button>
+                  <button class="btn-link">Bookmark</button>
+                  <span
+                    class="iconify cursor_"
+                    data-icon="icon-park-outline:like"
+                  ></span>
+                  <span class="iconify cursor_" data-icon="ci:share"></span>
+                  <span
+                    class="iconify cursor_"
+                    data-icon="akar-icons:more-vertical-fill"
+                  ></span>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer pad-sm">
+        <div class="btn-list">
+          <div class="btn-round">
+            <button class="btn-primary xl-bdr-radius pad-xs">
+              <a href="https://www.facebbok.com/">
+                <span
+                  class="iconify"
+                  data-icon="ant-design:facebook-filled"
+                ></span>
+              </a>
+            </button>
+          </div>
+          <div class="btn-round">
+            <button class="btn-primary xl-bdr-radius pad-xs">
+              <a href="https://www.twitter.com/">
+                <span class="iconify" data-icon="mdi:twitter"></span>
+              </a>
+            </button>
+          </div>
+          <div class="btn-round">
+            <button class="btn-primary xl-bdr-radius pad-xs">
+              <a href="https://www.linkedin.com/in/vrushabh-dhatrak-328ab0148/">
+                <span
+                  class="iconify"
+                  data-icon="akar-icons:linkedin-fill"
+                ></span>
+              </a>
+            </button>
+          </div>
+
+          <div class="btn-round">
+            <button class="btn-primary xl-bdr-radius pad-xs">
+              <a href="https://www.instargarm.com/">
+                <span
+                  class="iconify"
+                  data-icon="akar-icons:instagram-fill"
+                ></span>
+              </a>
+            </button>
+          </div>
+
+          <div class="btn-round">
+            <button class="btn-primary xl-bdr-radius pad-xs">
+              <a href="https://www.github.com/">
+                <span class="iconify" data-icon="akar-icons:github-fill"></span>
+              </a>
+            </button>
+          </div>
+        </div>
+        <div class="highlightMainText text-2">
+          Made With ❤️ By Vrushabh Dhatrak
+        </div>
+        <div class="highlightMainText text-2">Copyright @ 2022</div>
+      </footer>
+    </div>
+  </body>
+</html>

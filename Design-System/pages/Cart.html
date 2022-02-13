@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Vrushabh Dhatrak" />
+
+    <link rel="stylesheet" href="./../styles/main.css" />
+    <script
+      src="https://memorable-ui.netlify.app/script/header.js"
+      defer
+    ></script>
+    <script
+      src="https://memorable-ui.netlify.app/script/navigation.js"
+      defer
+    ></script>
+    <script
+      src="https://memorable-ui.netlify.app/script/modal.js"
+      defer
+    ></script>
+    <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
+
+    <title>Cart</title>
+  </head>
+  <body>
+    <div class="cart_container">
+      <div class="header_container">
+        <header class="sticky">
+          <img
+            class="img_logo"
+            src="./../assets/apna-5.PNG"
+            alt="header_logo"
+          />
+          <a href="./../../index.html" class="logo head-2">Apna Shop </a>
+
+          <div class="toggle" onclick="toggleMenu();"></div>
+          <ul class="menu">
+            <li>
+              <a
+                class="text-3"
+                onclick="toggleMenu();"
+                href="./../../index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="text-3" onclick="toggleMenu();" href="./filterPage.html"
+                >Shop Now</a
+              >
+            </li>
+          </ul>
+          <ul class="menu hide">
+            <li>
+              <a
+                onclick="toggleMenu();"
+                class="text-1"
+                href="./../Avatar/avatar.html"
+                >Avatar</a
+              >
+            </li>
+            <li>
+              <a
+                onclick="toggleMenu();"
+                class="text-1"
+                href="./../Alert/Alert.html"
+                >Alert</a
+              >
+            </li>
+          </ul>
+
+          <ul class="menu left_auto">
+            <div class="custom_input_one">
+              <input
+                id="name"
+                type="text"
+                class="input_field"
+                autocomplete="off"
+                placeholder=" "
+              />
+              <span
+                class="iconify icons text-2"
+                data-icon="ant-design:search-outlined"
+              ></span>
+              <label for="name" class="input__label text-2"
+                >Type Here to Search</label
+              >
+            </div>
+            <li>
+              <a href="./profilePage.html">
+                <div class="badge_div">
+                  <span
+                    class="iconify"
+                    data-icon="healthicons:ui-user-profile"
+                  ></span>
+                  <div class="text-2">Vrushabh</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="./../pages/wishlistPage.html">
+                <div class="badge_div">
+                  <span
+                    class="iconify"
+                    data-icon="icon-park-outline:like"
+                  ></span>
+                  <div class="notifyBadge"><span>06</span></div>
+                  <div class="text-2">Wishlist</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="./../pages/Cart.html">
+                <div class="badge_div">
+                  <span class="iconify" data-icon="bi:cart-check"></span>
+                  <div class="notifyBadge"><span>03</span></div>
+                  <div class="text-2">Cart</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </header>
+      </div>
+      <section class="my_cart_section">
+        <div class="text-3"><span class="bold">My Cart</span></div>
+      </section>
+      <div class="cart_main_section">
+        <div class="grid">
+          <div class="col col-xl-1">
+            <div class="container_card xxl-card-width">
+              <div class="card_header pad-md">
+                <div class="address_header">
+                  <div class="head-3 highlightMainText">Address</div>
+                  <button class="btn btn-outline-warning">
+                    <a href="#" class="show-modal">Change</a>
+                  </button>
+                </div>
+
+                <div class="text-2">
+                  Name: <span class="bold">Vrushabh Dhatrak</span>
+                </div>
+                <div class="text-2">
+                  Contact No: <span class="bold">9012345678</span>
+                </div>
+                <div class="text-2">
+                  Deliver to:
+                  <span class="bold">Nashik Road, Maharshtra-422101</span>
+                </div>
+              </div>
+            </div>
+            <div class="container_card xxl-card-width mar-y-2">
+              <div class="card_header header_row">
+                <div class="image-div mar-md">
+                  <img class="card_img" src="./../assets/cart/party-wear.jpg" />
+                </div>
+                <div class="mar-md">
+                  <div class="head-3 highlightMainText">Party Wear</div>
+                  <p class="text-2 mar-y-1 bold">
+                    Awesome party wear collection
+                  </p>
+                  <div class="text-2 bold mar-y-2">
+                    <span>RS.500</span>
+                    <span style="text-decoration: line-through">900</span>
+                    <span class="highlightMainText">(50% OFF)</span>
+                  </div>
+                  <div class="header_row mar-y-2">
+                    <span
+                      class="iconify text-5 cursor_"
+                      data-icon="fluent:delete-28-regular"
+                    ></span>
+                    <input type="text" name="" id="" />
+                    <span
+                      class="iconify text-5 cursor_"
+                      data-icon="carbon:add"
+                    ></span>
+                  </div>
+                  <div class="mar-y-2">
+                    <button class="btn btn-outline-warning">
+                      Move To Wishlist
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container_card xxl-card-width mar-y-2">
+              <div class="card_header header_row">
+                <div class="image-div mar-md">
+                  <img class="card_img" src="./../assets/cart/wishlist-1.png" />
+                </div>
+                <div class="mar-md">
+                  <div class="head-3 highlightMainText">Shirt</div>
+                  <p class="text-2 mar-y-1 bold">A wide variety of Shirts</p>
+                  <div class="text-2 bold mar-y-2">
+                    <span>RS.600</span>
+                    <span style="text-decoration: line-through">900</span>
+                    <span class="highlightMainText">(30% OFF)</span>
+                  </div>
+                  <div class="header_row mar-y-2">
+                    <span
+                      class="iconify text-5 cursor_"
+                      data-icon="fluent:delete-28-regular"
+                    ></span>
+                    <input type="text" name="" id="" />
+                    <span
+                      class="iconify text-5 cursor_"
+                      data-icon="carbon:add"
+                    ></span>
+                  </div>
+                  <div class="mar-y-2">
+                    <button class="btn btn-outline-warning">
+                      Move To Wishlist
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container_card xxl-card-width mar-y-2">
+              <div class="card_header header_row">
+                <div class="image-div mar-md">
+                  <img class="card_img" src="./../assets/cart/shirt.png" />
+                </div>
+                <div class="mar-md">
+                  <div class="head-3 highlightMainText">T-Shirt</div>
+                  <p class="text-2 mar-y-1 bold">Imported Cotton T-shirts</p>
+                  <div class="text-2 bold mar-y-1">
+                    <span>RS.200</span>
+                    <span style="text-decoration: line-through">400</span>
+                    <span class="highlightMainText">(50% OFF)</span>
+                  </div>
+                  <div class="header_row mar-y-1">
+                    <span
+                      class="iconify text-5 cursor_"
+                      data-icon="fluent:delete-28-regular"
+                    ></span>
+                    <input type="text" name="" id="" />
+                    <span
+                      class="iconify text-5 cursor_"
+                      data-icon="carbon:add"
+                    ></span>
+                  </div>
+                  <div class="mar-y-2">
+                    <button class="btn btn-outline-warning">
+                      Move To Wishlist
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-xl-2">
+            <div class="container_card xl-card-width">
+              <div class="card_header pad-md">
+                <div class="head-3 secondory-text">COUPONS</div>
+                <!--- Input with Icon -->
+                <div class="custom_input_one mar-y-2">
+                  <input
+                    id="apply_coupon"
+                    type="text"
+                    class="input_field"
+                    autocomplete="off"
+                    placeholder=" "
+                  />
+                  <span
+                    class="iconify icons text-2"
+                    data-icon="whh:coupon"
+                  ></span>
+                  <label for="apply_coupon" class="input__label text-2"
+                    >APPLY COUPON</label
+                  >
+                </div>
+                <div class="totals text-2">
+                  <div class="totals-item">
+                    <label class="price-label bold">PRICE DETAILS</label>
+                    <div class="totals-value">(3 items)</div>
+                  </div>
+                  <div class="totals-item">
+                    <label class="price-label bold">Subtotal</label>
+                    <div class="totals-value">1300.00</div>
+                  </div>
+                  <div class="totals-item">
+                    <label class="price-label bold">Tax (5%)</label>
+                    <div class="totals-value">10.00</div>
+                  </div>
+                  <div class="totals-item">
+                    <label class="price-label bold">Shipping</label>
+                    <div class="totals-value" id="cart-shipping">50</div>
+                  </div>
+                  <div class="totals-item">
+                    <label class="price-label bold">Grand Total</label>
+                    <div class="totals-value" id="cart-total">1370.00</div>
+                  </div>
+                  <div class="totals-item card_margin_auto_left mar-y-4">
+                    <button class="btn btn-primary text-2">Placed Order</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card_body text-3 mar-md"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal blck_">
+        <div class="modal_container lg-modal-width mar-y-2">
+          <div class="modal_header pad-md">
+            <div class="head-2 highlightMainText">Address Management</div>
+            <span
+              class="iconify modal-close text-3 highlightMainText cursor_"
+              data-icon="ant-design:close-circle-outlined"
+            ></span>
+          </div>
+          <div class="modal_body_ text-2 pad-md">
+            <div class="head-3 bold highlightMainText">Home</div>
+            <div class="displayFlexRow address-mgmt">
+              <input type="radio" class="mar-xs" name="homeWork" id="" />
+              <div class="text-2 displayFlexColumn">
+                <div class="bold">Vrushabh Dhatrak</div>
+                <div class="text-2 secondory-text">Apna dukan Chauk</div>
+                <div class="text-2 secondory-text">Xyz Galli</div>
+                <div class="text-2 secondory-text">Unkown District</div>
+                <div class="text-2 secondory-text">Maharashtra-000000</div>
+              </div>
+            </div>
+            <div class="head-3 bold highlightMainText">Work</div>
+            <div class="displayFlexRow address-mgmt">
+              <input type="radio" class="mar-xs" name="homeWork" id="" />
+              <div class="text-2 displayFlexColumn">
+                <div class="bold">Vrushabh Dhatrak</div>
+                <div class="text-2 secondory-text">Apna dukan Chauk</div>
+                <div class="text-2 secondory-text">Xyz Galli</div>
+                <div class="text-2 secondory-text">Unkown District</div>
+                <div class="text-2 secondory-text">Maharashtra-000000</div>
+              </div>
+            </div>
+          </div>
+          <div class="modal_footer pad-sm">
+            <button class="btn btn-primary text-2">+ ADD NEW ADDRESS</button>
+          </div>
+        </div>
+      </div>
+      <div class="overlay blck_"></div>
+      <footer class="footer pad-sm">
+        <div class="btn-list">
+          <div class="btn-round">
+            <button class="btn-primary xl-bdr-radius pad-xs">
+              <a href="https://www.facebbok.com/">
+                <span
+                  class="iconify"
+                  data-icon="ant-design:facebook-filled"
+                ></span>
+              </a>
+            </button>
+          </div>
+          <div class="btn-round">
+            <button class="btn-primary xl-bdr-radius pad-xs">
+              <a href="https://www.twitter.com/">
+                <span class="iconify" data-icon="mdi:twitter"></span>
+              </a>
+            </button>
+          </div>
+          <div class="btn-round">
+            <button class="btn-primary xl-bdr-radius pad-xs">
+              <a href="https://www.linkedin.com/in/vrushabh-dhatrak-328ab0148/">
+                <span
+                  class="iconify"
+                  data-icon="akar-icons:linkedin-fill"
+                ></span>
+              </a>
+            </button>
+          </div>
+
+          <div class="btn-round">
+            <button class="btn-primary xl-bdr-radius pad-xs">
+              <a href="https://www.instargarm.com/">
+                <span
+                  class="iconify"
+                  data-icon="akar-icons:instagram-fill"
+                ></span>
+              </a>
+            </button>
+          </div>
+
+          <div class="btn-round">
+            <button class="btn-primary xl-bdr-radius pad-xs">
+              <a href="https://www.github.com/">
+                <span class="iconify" data-icon="akar-icons:github-fill"></span>
+              </a>
+            </button>
+          </div>
+        </div>
+        <div class="highlightMainText text-2">
+          Made With ❤️ By Vrushabh Dhatrak
+        </div>
+        <div class="highlightMainText text-2">Copyright @ 2022</div>
+      </footer>
+    </div>
+  </body>
+</html>

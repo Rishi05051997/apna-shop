@@ -41,7 +41,6 @@
     grid-column:banner;
     height: 60vh;
     position: relative;
-    filter: invert(24%);
 }
 
 .banner .banner_content .banner_main_heading {
@@ -50,11 +49,14 @@
     left: 40%;
 }
 
-.sub_banner_heading.head-1 {
+.sub_banner_heading.head-1  {
     position: absolute;
     top: 44%;
     left: 26%;
     font-size: 8rem; 
+}
+
+.headingAnimate {
     background: linear-gradient(to right,#095fab 10%, #25abe8 50%, #57d75b 60%);
     background-size: auto auto;
     background-clip: border-box;
@@ -65,7 +67,7 @@
     -webkit-text-fill-color: transparent;
     animation: textclip 5.5s linear infinite;
     display: inline-block;
-  }
+}
 
 
 @keyframes textclip {

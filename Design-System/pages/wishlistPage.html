@@ -16,6 +16,10 @@
       src="https://memorable-ui.netlify.app/script/navigation.js"
       defer
     ></script>
+    <script
+      src="https://memorable-ui.netlify.app/script/toast.js"
+      defer
+    ></script>
     <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
 
     <title>Wishlist</title>
@@ -65,17 +69,7 @@
               >
             </li>
           </ul>
-
           <ul class="menu left_auto">
-            <!-- <li><a class="text-3" onclick="toggleMenu();">Documentation</a></li>
-                <div class="btn-round">
-                  <button class="btn-primary xl-bdr-radius pad-xs">
-                    <a href="https://www.github.com/">
-                      <span class="iconify" data-icon="akar-icons:github-fill"></span>
-                    </a>
-                  </button>
-                </div> -->
-            <!--- Input with Icon -->
             <div class="custom_input_one">
               <input
                 id="name"
@@ -135,7 +129,9 @@
           <div class="card_header">
             <div class="mar-xs">
               <div class="head-3 highlightMainText">T-Shirt</div>
-              <p class="text-2">Imported cotton</p>
+              <p class="text-2">
+                Men Regular Fit Checkered Ribbed Collar Casual T-Shirt
+              </p>
             </div>
             <div class="close_icon text-2 highlightMainText cursor_">
               <span
@@ -145,26 +141,34 @@
             </div>
 
             <div class="image-div">
-              <img class="card_img" src="./../assets/wishlist/shirt.png" />
+              <img class="card_img" src="./../assets/filterPage/shirt.png" />
             </div>
           </div>
           <div class="card_body text-2 mar-md">
-            <div class="text-2 mar-y-1">
-              <span class="bold">RS.100</span
-              ><span class="highlightMainText bold"> (70% OFF)</span>
+            <div class="text-2 mar-y-1 bold">
+              <span>₹459</span>
+              <span style="text-decoration: line-through">₹1,299</span>
+              <span class="highlightMainText"> 64% off</span>
             </div>
             <div class="mar-y-1">
-              <span class="bold">1</span>
+              <span class="bold">4.5</span>
               <span class="iconify" data-icon="emojione:star"></span> |
               <span class="bold">15</span>
             </div>
+            <div class="mar-y-1">
+              <span class="bold highlightMainText">Free Delivery</span>
+            </div>
           </div>
           <footer>
-            <div class="card_footer text-2 mar-xs pad-xs">
-              <button class="btn btn-outline-warning">
-                <a href="#"> Add To Card </a>
+            <div class="card_footer text-2 mar-sm">
+              <button
+                onclick="toastrSuccess(this)"
+                class="btn btn-outline-warning"
+              >
+                Add To Cart
               </button>
               <span
+                onclick="toastrInfo(this)"
                 class="iconify cursor_"
                 data-icon="icon-park-outline:like"
               ></span>
@@ -182,8 +186,8 @@
         <div class="container_card sm-card-width">
           <div class="card_header">
             <div class="mar-xs">
-              <div class="head-3 highlightMainText">Shirt</div>
-              <p class="text-2">Good Quality leather shirts</p>
+              <div class="head-3 highlightMainText">Formal Shirt</div>
+              <p class="text-2">Men Slim Fit Solid Slim Collar Formal Shirt</p>
             </div>
             <div class="close_icon text-2 highlightMainText cursor_">
               <span
@@ -195,27 +199,35 @@
             <div class="image-div">
               <img
                 class="card_img"
-                src="./../assets/wishlist/Shirt-1 (2).png"
+                src="./../assets/filterPage/formal-shirt-2.jpeg"
               />
             </div>
           </div>
           <div class="card_body text-2 mar-md">
-            <div class="text-2 mar-y-1">
-              <span class="bold">RS.800</span
-              ><span class="highlightMainText bold"> (50% OFF)</span>
+            <div class="text-2 mar-y-1 bold">
+              <span>₹459</span>
+              <span style="text-decoration: line-through">₹1,199</span>
+              <span class="highlightMainText"> 61% off</span>
             </div>
             <div class="mar-y-1">
               <span class="bold">4.5</span>
               <span class="iconify" data-icon="emojione:star"></span> |
               <span class="bold">15</span>
             </div>
+            <div class="mar-y-1">
+              <span class="bold highlightMainText">Free Delivery</span>
+            </div>
           </div>
           <footer>
-            <div class="card_footer text-2 mar-xs pad-xs">
-              <button class="btn btn-outline-warning">
-                <a href="#"> Add To Card </a>
+            <div class="card_footer text-2 mar-sm">
+              <button
+                onclick="toastrSuccess(this)"
+                class="btn btn-outline-warning"
+              >
+                Add To Cart
               </button>
               <span
+                onclick="toastrInfo(this)"
                 class="iconify cursor_"
                 data-icon="icon-park-outline:like"
               ></span>
@@ -233,8 +245,10 @@
         <div class="container_card sm-card-width">
           <div class="card_header">
             <div class="mar-xs">
-              <div class="head-3 highlightMainText">Party Wear</div>
-              <p class="text-2">Mens Party wear</p>
+              <div class="head-3 highlightMainText">Half Shirt</div>
+              <p class="text-2">
+                Men Regular Fit Checkered Ribbed Collar Casual Shirt
+              </p>
             </div>
             <div class="close_icon text-2 highlightMainText cursor_">
               <span
@@ -244,26 +258,37 @@
             </div>
 
             <div class="image-div">
-              <img class="card_img" src="./../assets/wishlist/party-wear.jpg" />
+              <img
+                class="card_img"
+                src="./../assets/filterPage/half-shirt-2.jpeg"
+              />
             </div>
           </div>
           <div class="card_body text-2 mar-md">
-            <div class="text-2 mar-y-1">
-              <span class="bold">RS.2000</span
-              ><span class="highlightMainText bold"> (30% OFF)</span>
+            <div class="text-2 mar-y-1 bold">
+              <span>₹399</span>
+              <span style="text-decoration: line-through">₹999</span>
+              <span class="highlightMainText"> 60% off</span>
             </div>
             <div class="mar-y-1">
-              <span class="bold">4</span>
+              <span class="bold">4.5</span>
               <span class="iconify" data-icon="emojione:star"></span> |
               <span class="bold">15</span>
             </div>
+            <div class="mar-y-1">
+              <span class="bold highlightMainText">Free Delivery</span>
+            </div>
           </div>
           <footer>
-            <div class="card_footer text-2 mar-xs pad-xs">
-              <button class="btn btn-outline-warning">
-                <a href="#"> Add To Card </a>
+            <div class="card_footer text-2 mar-sm">
+              <button
+                onclick="toastrSuccess(this)"
+                class="btn btn-outline-warning"
+              >
+                Add To Cart
               </button>
               <span
+                onclick="toastrInfo(this)"
                 class="iconify cursor_"
                 data-icon="icon-park-outline:like"
               ></span>
@@ -281,8 +306,10 @@
         <div class="container_card sm-card-width">
           <div class="card_header">
             <div class="mar-xs">
-              <div class="head-3 highlightMainText">Formals</div>
-              <p class="text-2">Good Quality Cotton Formals</p>
+              <div class="head-3 highlightMainText">Casual Shirt</div>
+              <p class="text-2">
+                Men Regular Fit Printed Spread Collar Casual Shirt
+              </p>
             </div>
             <div class="close_icon text-2 highlightMainText cursor_">
               <span
@@ -292,26 +319,37 @@
             </div>
 
             <div class="image-div">
-              <img class="card_img" src="./../assets/wishlist/formal.png" />
+              <img
+                class="card_img"
+                src="./../assets/filterPage/casual-shirt-1.jpeg"
+              />
             </div>
           </div>
           <div class="card_body text-2 mar-md">
-            <div class="text-2 mar-y-1">
-              <span class="bold">RS.100</span
-              ><span class="highlightMainText bold"> (70% OFF)</span>
+            <div class="text-2 mar-y-1 bold">
+              <span>₹804</span>
+              <span style="text-decoration: line-through">₹2,299</span>
+              <span class="highlightMainText"> 65% off</span>
             </div>
             <div class="mar-y-1">
-              <span class="bold">1</span>
+              <span class="bold">3.5</span>
               <span class="iconify" data-icon="emojione:star"></span> |
-              <span class="bold">15</span>
+              <span class="bold">2 Reviews</span>
+            </div>
+            <div class="mar-y-1">
+              <span class="bold highlightMainText">Free Delivery</span>
             </div>
           </div>
           <footer>
-            <div class="card_footer text-2 mar-xs pad-xs">
-              <button class="btn btn-outline-warning">
-                <a href="#"> Add To Card </a>
+            <div class="card_footer text-2 mar-sm">
+              <button
+                onclick="toastrSuccess(this)"
+                class="btn btn-outline-warning"
+              >
+                Add To Cart
               </button>
               <span
+                onclick="toastrInfo(this)"
                 class="iconify cursor_"
                 data-icon="icon-park-outline:like"
               ></span>
@@ -329,8 +367,10 @@
         <div class="container_card sm-card-width">
           <div class="card_header">
             <div class="mar-xs">
-              <div class="head-3 highlightMainText">Shirt</div>
-              <p class="text-2">Indian Made Shirts</p>
+              <div class="head-3 highlightMainText">Casual Shirt</div>
+              <p class="text-2">
+                Men Regular Fit Printed Spread Collar Casual Shirt
+              </p>
             </div>
             <div class="close_icon text-2 highlightMainText cursor_">
               <span
@@ -342,75 +382,35 @@
             <div class="image-div">
               <img
                 class="card_img"
-                src="./../assets/wishlist/Shirt-1 (1).png"
+                src="./../assets/filterPage/casual-shirt-2.jpeg"
               />
             </div>
           </div>
           <div class="card_body text-2 mar-md">
-            <div class="text-2 mar-y-1">
-              <span class="bold">RS.100</span
-              ><span class="highlightMainText bold"> (70% OFF)</span>
+            <div class="text-2 mar-y-1 bold">
+              <span>₹689</span>
+              <span style="text-decoration: line-through">₹1,599</span>
+              <span class="highlightMainText"> 56% off</span>
             </div>
             <div class="mar-y-1">
-              <span class="bold">1</span>
+              <span class="bold">3.5</span>
               <span class="iconify" data-icon="emojione:star"></span> |
-              <span class="bold">15</span>
+              <span class="bold">2 Reviews</span>
+            </div>
+            <div class="mar-y-1">
+              <span class="bold highlightMainText">Free Delivery</span>
             </div>
           </div>
           <footer>
-            <div class="card_footer text-2 mar-xs pad-xs">
-              <button class="btn btn-outline-warning">
-                <a href="#"> Add To Card </a>
+            <div class="card_footer text-2 mar-sm">
+              <button
+                onclick="toastrWarning(this)"
+                class="btn btn-outline-warning"
+              >
+                Add To Cart
               </button>
               <span
-                class="iconify cursor_"
-                data-icon="icon-park-outline:like"
-              ></span>
-              <span class="iconify cursor_" data-icon="ci:share"></span>
-              <span
-                class="iconify cursor_"
-                data-icon="akar-icons:more-vertical-fill"
-              ></span>
-            </div>
-          </footer>
-          <div class="badge-overlay">
-            <span class="bottom-right badge blue">Sale</span>
-          </div>
-        </div>
-        <div class="container_card sm-card-width">
-          <div class="card_header">
-            <div class="mar-xs">
-              <div class="head-3 highlightMainText">Shirt</div>
-              <p class="text-2">Shirt in medium quality</p>
-            </div>
-            <div class="close_icon text-2 highlightMainText cursor_">
-              <span
-                class="iconify"
-                data-icon="ant-design:close-circle-outlined"
-              ></span>
-            </div>
-
-            <div class="image-div">
-              <img class="card_img" src="./../assets/wishlist/wishlist-1.png" />
-            </div>
-          </div>
-          <div class="card_body text-2 mar-md">
-            <div class="text-2 mar-y-1">
-              <span class="bold">RS.400</span
-              ><span class="highlightMainText bold"> (80% OFF)</span>
-            </div>
-            <div class="mar-y-1">
-              <span class="bold">4.8</span>
-              <span class="iconify" data-icon="emojione:star"></span> |
-              <span class="bold">15</span>
-            </div>
-          </div>
-          <footer>
-            <div class="card_footer text-2 mar-xs pad-xs">
-              <button class="btn btn-outline-secondory">
-                <a href="#">Add To Cart</a>
-              </button>
-              <span
+                onclick="toastrInfo(this)"
                 class="iconify cursor_"
                 data-icon="icon-park-outline:like"
               ></span>
@@ -424,6 +424,100 @@
           <div class="badge-overlay">
             <span class="bottom-right badge grey">Sold</span>
           </div>
+        </div>
+        <div class="container_card sm-card-width">
+          <div class="card_header">
+            <div class="mar-xs">
+              <div class="head-3 highlightMainText">Formal Shirt</div>
+              <p class="text-2">Shirt in medium quality</p>
+            </div>
+            <div class="close_icon text-2 highlightMainText cursor_">
+              <span
+                class="iconify"
+                data-icon="ant-design:close-circle-outlined"
+              ></span>
+            </div>
+
+            <div class="image-div">
+              <img
+                class="card_img"
+                src="./../assets/filterPage/formal-shirt-1.jpeg"
+              />
+            </div>
+          </div>
+          <div class="card_body text-2 mar-md">
+            <div class="text-2 mar-y-1 bold">
+              <span>₹459</span>
+              <span style="text-decoration: line-through">₹1,199</span>
+              <span class="highlightMainText"> 61% off</span>
+            </div>
+            <div class="mar-y-1">
+              <span class="bold">4.5</span>
+              <span class="iconify" data-icon="emojione:star"></span> |
+              <span class="bold">15</span>
+            </div>
+            <div class="mar-y-1">
+              <span class="bold highlightMainText">Free Delivery</span>
+            </div>
+          </div>
+          <footer>
+            <div class="card_footer text-2 mar-sm">
+              <button
+                onclick="toastrError(this)"
+                class="btn btn-outline-warning"
+              >
+                Add To Cart
+              </button>
+              <span
+                onclick="toastrInfo(this)"
+                class="iconify cursor_"
+                data-icon="icon-park-outline:like"
+              ></span>
+              <span class="iconify cursor_" data-icon="ci:share"></span>
+              <span
+                class="iconify cursor_"
+                data-icon="akar-icons:more-vertical-fill"
+              ></span>
+            </div>
+          </footer>
+          <div class="badge-overlay">
+            <span class="bottom-right badge grey">Sold</span>
+          </div>
+        </div>
+      </div>
+      <!--- Success Toastr -->
+      <div class="toastr success-alert-toast blck_">
+        <div class="alert success-alert mar-y-2">
+          <span class="iconify head-1" data-icon="ep:success-filled"></span>
+          <h4 class="head-4 mar-sm">Product Added Successfully !!!</h4>
+          <span class="iconify text-3" data-icon="akar-icons:circle-x"></span>
+        </div>
+      </div>
+      <!--- Error Toastr -->
+      <div class="toastr error-alert-toast blck_">
+        <!-- error alert  -->
+        <div class="alert error-alert mar-y-2">
+          <span class="iconify head-1" data-icon="jam:triangle-danger"></span>
+          <h4 class="head-4 mar-sm">Sorry this product is out of stock!!!!</h4>
+          <span class="iconify text-3" data-icon="akar-icons:circle-x"></span>
+        </div>
+      </div>
+      <!--- Warning Toastr -->
+      <div class="toastr warning-alert-toast blck_">
+        <!-- warning alert  -->
+        <div class="alert warning-alert mar-y-2">
+          <span class="iconify head-1" data-icon="gg:danger"></span>
+          <h4 class="head-4 mar-sm">Sorry this product no more available!!!</h4>
+          <span class="iconify text-3" data-icon="akar-icons:circle-x"></span>
+        </div>
+      </div>
+      <!--- Info Toastr -->
+      <div class="toastr info-alert-toast blck_">
+        <!-- Info alert  -->
+        <div class="alert info-alert mar-y-2">
+          <span class="iconify head-1" data-icon="gg:danger"></span>
+          <h4 class="head-4 mar-sm">Product Added to wishlist !!!</h4>
+          <span class="iconify text-3" data-icon="akar-icons:circle-x"></span>
         </div>
       </div>
       <footer class="footer pad-sm">

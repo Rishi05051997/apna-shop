@@ -56,7 +56,7 @@
     font-size: 8rem; 
 }
 
-.headingAnimate {
+.heading-animate {
     background: linear-gradient(to right,#095fab 10%, #25abe8 50%, #57d75b 60%);
     background-size: auto auto;
     background-clip: border-box;

@@ -59,11 +59,7 @@ body {
     transform: translate(-50%, -50%);
     z-index: 20;
 }
-.img_logo {
-    height: 8rem !important;
-    width: 8rem !important;
-}
-
-.header_container header .img_logo {
-    filter: none !important;
+.header_logo {
+    height: 8rem;
+    width: 8rem;
 }

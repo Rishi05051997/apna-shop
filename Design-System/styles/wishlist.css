@@ -3,7 +3,7 @@
     Release: 0.1
     Description : Wishlist CSS
 */
-.wishlist_container {
+.wishlist-container {
     margin:0;
     padding:0;
     display: grid;
@@ -12,13 +12,13 @@
     
     grid-template-areas: 
     "header"
-    "wishlist_results"
-    "wishlist_cards"
+    "wishlist-results"
+    "wishlist-cards"
     "footer";
 }
 
-.wishlist_results {
-    grid-column: wishlist_results;
+.wishlist-results {
+    grid-column: wishlist-results;
     margin: 15rem 0 0;
     display: flex;
     justify-content: center;
@@ -26,11 +26,11 @@
     align-items: center;
 }
 
-.wishlist_cards_container {
-    margin: 2rem 9rem;
-    grid-column: wishlist_cards;
+.wishlist-cards-container {
+    margin: 2rem 17rem;
+    grid-column: wishlist-cards;
     display: grid;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, 25rem);
 }
 

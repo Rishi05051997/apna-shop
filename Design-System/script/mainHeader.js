@@ -1,6 +1,6 @@
 const makeNavHeader = () => {
-    let navHeaderElement = document.querySelector('.header-container');
-    navHeaderElement.innerHTML = `
+  let navHeaderElement = document.querySelector('.header-container');
+  navHeaderElement.innerHTML = `
     <div class="header-container">
         <header class="sticky">
           <img

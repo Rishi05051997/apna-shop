@@ -15,14 +15,14 @@
     "header header header header header"
     "offer offer offer offer offer"
     "banner banner banner banner banner"
-    "feature_categories feature_categories feature_categories feature_categories feature_categories"
+    "feature-categories feature-categories feature-categories feature-categories feature-categories"
     "testimonials testimonials testimonials testimonials testimonials"
     "footer footer footer footer footer"
     ;
 
 }
 /* Header Component For Entire Project */
-.header_container {
+.header-container {
     grid-column: header;
 } 
 
@@ -36,20 +36,20 @@
 }
 
 /* Banner section Starting Here */
-.banner .custom_img_responsive img {
+.banner .custom-img-responsive img {
     width:100%;
     grid-column:banner;
     height: 60vh;
     position: relative;
 }
 
-.banner .banner_content .banner_main_heading {
+.banner .banner-content .banner-main-heading {
     position: absolute;
     top: 30%;
     left: 40%;
 }
 
-.sub_banner_heading.head-1  {
+.sub-banner-heading.head-1  {
     position: absolute;
     top: 44%;
     left: 26%;
@@ -75,35 +75,35 @@
     background-position: 200% center;
   }
 }
-.sub_child__banner_heading {
+.sub-child-banner-heading {
     position: absolute;
     top: 58%;
     left: 28%;
 }
 
-.show_now_btn{
+.show-now-btn{
     position: absolute;
     top: 70%;
     left: 46%;
 }
 
 /* Featured Categories section Starting Here */
-.feature_categories {
-    grid-column:feature_categories;
+.feature-categories {
+    grid-column:feature-categories;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.feature_categories .feature_cards_section {
+.feature-categories .feature-cards-section {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
 
 /* Featured Brands section Starting Here */
-.feature_brands {
-    grid-column:feature_brands;
+.feature-brands {
+    grid-column:feature-brands;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -112,7 +112,7 @@
   height: 23rem !important;
 }
 
-.feature_brands .brand_img_div .basic_img_responsive_three_column {
+.feature-brands .brand-img-div .basic-img-responsive-three-column {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -128,7 +128,7 @@
 
 }
 
-.testimonials  .testimonials_cards {
+.testimonials  .testimonials-cards {
     width: 100%;
     display: flex;
     justify-content: space-evenly;

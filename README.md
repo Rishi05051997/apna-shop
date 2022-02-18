@@ -51,12 +51,17 @@ Here are screenshots that show the E-commerce demo application in use.
 ---
 
 **Login Page**
-![Login Page](./Design-System/assets/readme-file/cart.PNG "Login Page")
+![Login Page](./Design-System/assets/readme-file/login.PNG "Login Page")
 
 ---
 
 **Signup Page**
-![Signup Page](./Design-System/assets/readme-file/cart.PNG "Cart")
+![Signup Page](./Design-System/assets/readme-file/signup.PNG "Signup Page")
+
+---
+
+**Change Password Page**
+![*Change Password Page](./Design-System/assets/readme-file/chnage-password.PNG "Change Password Page")
 
 ---
 

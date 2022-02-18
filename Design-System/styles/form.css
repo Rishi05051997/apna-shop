@@ -3,7 +3,7 @@
     Release: 0.1
     Description : Form CSS
 */
-.form_section {
+.form-section {
     display: flex;
     flex-direction: column;
     height: 90vh;

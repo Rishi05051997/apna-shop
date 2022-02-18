@@ -50,6 +50,11 @@ Here are screenshots that show the E-commerce demo application in use.
 
 ---
 
+**Filter Page**
+![Shopping Cart](./Design-System/assets/readme-file/filter-page.PNG "Shopping Cart")
+
+---
+
 **Login Page**
 ![Login Page](./Design-System/assets/readme-file/login.PNG "Login Page")
 

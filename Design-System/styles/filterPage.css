@@ -3,7 +3,7 @@
     Release: 0.1
     Description : Filter Page CSS
 */
-.filter_container {
+.filter-container {
     margin:0;
     padding:0;
     display: grid;
@@ -12,19 +12,19 @@
     
     grid-template-areas: 
     "header header"
-    "filter_results filter_results"
-    "filter_aside cards_section"
+    "filter-results filter-results"
+    "filter-aside cards-section"
     "footer footer"
     ;
 }
 /* Header Component For Entire Project */
-.header_container {
+.header-container {
     grid-column: header;
 }
 
 /* Filter Results For Entire Project */
-.filter_results {
-    grid-column: filter_results;
+.filter-results {
+    grid-column: filter-results;
     margin: 15rem 0 0;
     display: flex;
     flex-direction: column;
@@ -33,31 +33,31 @@
 }
 
 /* Side Filter For Entire Project */
-.filter_aside {
-    grid-column:filter_aside;
+.filter-aside {
+    grid-column:filter-aside;
     background: #fff;
     box-shadow: 1px 2px 1px 2px rgb(0 0 0 / 10%);
     border-radius: 1rem;
     
 }
-.filter_aside .filter_aside_header {
+.filter-aside .filter-aside-header {
     display:flex;
     justify-content:space-evenly
 }
-.filter_aside .filter_aside_header > div:hover {
+.filter-aside .filter-aside-header > div:hover {
     text-decoration:underline;
     color: var(--primary-color);
     cursor: pointer;
 }
 
 /* cards section For Entire Project */
-.cards_section {
-    grid-column:cards_section;
+.cards-section {
+    grid-column: cards-section;
     display: flex;
-    justify-content: center;
     display: grid;
-    grid-gap: 0.5rem;
-    grid-template-columns: repeat(auto-fit, 30rem);
+    grid-gap: 1.47rem;
+    grid-template-columns: repeat(auto-fit, 26rem);
+    margin: 0 11.7rem;
 }
 
 

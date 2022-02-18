@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Vrushabh Dhatrak" />
-
+    <meta
+      name="description"
+      content="Cart Page tells about final order details"
+    />
     <link rel="stylesheet" href="./../styles/main.css" />
     <script
       src="https://memorable-ui.netlify.app/script/header.js"
@@ -20,116 +23,21 @@
       defer
     ></script>
     <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
-
+    <script src="./../script/mainHeader.js" defer></script>
     <title>Cart</title>
   </head>
   <body>
-    <div class="cart_container">
-      <div class="header_container">
-        <header class="sticky">
-          <img
-            class="img_logo"
-            src="./../assets/apna-5.PNG"
-            alt="header_logo"
-          />
-          <a href="./../../index.html" class="logo head-2">Apna Shop </a>
-
-          <div class="toggle" onclick="toggleMenu();"></div>
-          <ul class="menu">
-            <li>
-              <a
-                class="text-3"
-                onclick="toggleMenu();"
-                href="./../../index.html"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a class="text-3" onclick="toggleMenu();" href="./filterPage.html"
-                >Shop Now</a
-              >
-            </li>
-          </ul>
-          <ul class="menu hide">
-            <li>
-              <a
-                onclick="toggleMenu();"
-                class="text-1"
-                href="./../Avatar/avatar.html"
-                >Avatar</a
-              >
-            </li>
-            <li>
-              <a
-                onclick="toggleMenu();"
-                class="text-1"
-                href="./../Alert/Alert.html"
-                >Alert</a
-              >
-            </li>
-          </ul>
-
-          <ul class="menu left_auto">
-            <div class="custom_input_one">
-              <input
-                id="name"
-                type="text"
-                class="input_field"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <span
-                class="iconify icons text-2"
-                data-icon="ant-design:search-outlined"
-              ></span>
-              <label for="name" class="input__label text-2"
-                >Type Here to Search</label
-              >
-            </div>
-            <li>
-              <a href="./profilePage.html">
-                <div class="badge_div">
-                  <span
-                    class="iconify"
-                    data-icon="healthicons:ui-user-profile"
-                  ></span>
-                  <div class="text-2">Vrushabh</div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="./../pages/wishlistPage.html">
-                <div class="badge_div">
-                  <span
-                    class="iconify"
-                    data-icon="icon-park-outline:like"
-                  ></span>
-                  <div class="notifyBadge"><span>06</span></div>
-                  <div class="text-2">Wishlist</div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="./../pages/Cart.html">
-                <div class="badge_div">
-                  <span class="iconify" data-icon="bi:cart-check"></span>
-                  <div class="notifyBadge"><span>03</span></div>
-                  <div class="text-2">Cart</div>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </header>
-      </div>
-      <section class="my_cart_section">
+    <div class="cart-container">
+      <div class="header-container"></div>
+      <section class="my-cart-section">
         <div class="text-3"><span class="bold">My Cart</span></div>
       </section>
-      <div class="cart_main_section">
+      <div class="cart-main-section">
         <div class="grid">
           <div class="col col-xl-1">
-            <div class="container_card xxl-card-width">
-              <div class="card_header pad-md">
-                <div class="address_header">
+            <div class="container-card xxl-card-width">
+              <div class="card-header pad-md">
+                <div class="address-header">
                   <div class="head-3 highlightMainText">Address</div>
                   <button class="btn btn-outline-warning">
                     <a href="#" class="show-modal">Change</a>
@@ -148,85 +56,40 @@
                 </div>
               </div>
             </div>
-            <div class="container_card xxl-card-width mar-y-2">
-              <div class="card_header header_row">
+            <div class="container-card xxl-card-width mar-y-2">
+              <div class="card-header card-header-row">
                 <div class="image-div mar-md">
                   <img
-                    class="card_img"
-                    src="./../assets/filterPage/formal-shirt-2.jpeg"
+                    class="card-img"
+                    src="./../assets/filterPage/formal-shirt-1.jpeg"
                   />
                 </div>
                 <div class="mar-md">
                   <div class="head-3 highlightMainText">Formal Shirt</div>
-                  <p class="text-2 mar-y-1 bold">
+                  <p class="text-2 mar-y-2 bold">
                     Men Slim Fit Solid Formal Shirt
                   </p>
                   <div class="text-2">5TH ANFOLD</div>
-                  <div class="text-2 mar-y-1 bold">
+                  <div class="text-2 mar-y-2 bold">
                     <span>₹459</span>
                     <span style="text-decoration: line-through">₹1,199</span>
                     <span class="highlightMainText"> 61% off</span>
                   </div>
-                  <div class="mar-y-1">
-                    <span class="bold">4.5</span>
-                    <span class="iconify" data-icon="emojione:star"></span> |
-                    <span class="bold">15</span>
-                  </div>
-                  <div class="mar-y-1">
-                    <span class="bold highlightMainText">Free Delivery</span>
-                  </div>
-                  <div class="header_row mar-y-2">
-                    <span
-                      class="iconify text-3 cursor_"
-                      data-icon="fluent:delete-28-regular"
-                    ></span>
-                    <input type="text" name="" id="" />
-                    <span
-                      class="iconify text-3 cursor_"
-                      data-icon="carbon:add"
-                    ></span>
-                    <button class="btn btn-outline-warning">
-                      Move To Wishlist
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="container_card xxl-card-width mar-y-2">
-              <div class="card_header header_row">
-                <div class="image-div mar-md">
-                  <img
-                    class="card_img"
-                    src="./../assets/filterPage/casual-shirt-2.jpeg"
-                  />
-                </div>
-                <div class="mar-md">
-                  <div class="head-3 highlightMainText">Casual Shirt</div>
-                  <p class="text-2 mar-y-1 bold">A wide variety of Shirts</p>
-                  <div class="text-2">SINGLE</div>
-                  <div class="text-2 mar-y-1 bold">
-                    <span>₹804</span>
-                    <span style="text-decoration: line-through">₹2,299</span>
-                    <span class="highlightMainText"> 65% off</span>
-                  </div>
-                  <div class="mar-y-1">
+                  <div class="mar-y-2">
                     <span class="bold">3.5</span>
                     <span class="iconify" data-icon="emojione:star"></span> |
                     <span class="bold">2 Reviews</span>
                   </div>
-                  <div class="mar-y-1">
+                  <div class="mar-y-2">
                     <span class="bold highlightMainText">Free Delivery</span>
                   </div>
-                  <div class="header_row mar-y-2">
+                  <div class="text-4 mar-y-2">
                     <span
-                      class="iconify text-3 cursor_"
+                      class="iconify cursor_ head-3"
                       data-icon="fluent:delete-28-regular"
                     ></span>
                     <input type="text" name="" id="" />
-                    <span
-                      class="iconify text-3 cursor_"
-                      data-icon="carbon:add"
-                    ></span>
+                    <span class="iconify cursor_" data-icon="carbon:add"></span>
                     <button class="btn btn-outline-warning">
                       Move To Wishlist
                     </button>
@@ -234,38 +97,81 @@
                 </div>
               </div>
             </div>
-            <div class="container_card xxl-card-width mar-y-2">
-              <div class="card_header header_row">
+            <div class="container-card xxl-card-width mar-y-2">
+              <div class="card-header card-header-row">
                 <div class="image-div mar-md">
-                  <img class="card_img" src="./../assets/cart/shirt.png" />
+                  <img
+                    class="card-img"
+                    src="./../assets/filterPage/casual-shirt-2.jpeg"
+                  />
                 </div>
                 <div class="mar-md">
-                  <div class="head-3 highlightMainText">Half Shirt</div>
-                  <p class="text-2 mar-y-1 bold">Imported Cotton Half shirts</p>
-                  <div class="text-2">Casual</div>
-                  <div class="text-2 mar-y-1 bold">
-                    <span>₹399</span>
-                    <span style="text-decoration: line-through">₹999</span>
-                    <span class="highlightMainText"> 60% off</span>
+                  <div class="head-3 highlightMainText">Formal Shirt</div>
+                  <p class="text-2 mar-y-2 bold">
+                    Men Slim Fit Solid Formal Shirt
+                  </p>
+                  <div class="text-2">5TH ANFOLD</div>
+                  <div class="text-2 mar-y-2 bold">
+                    <span>₹459</span>
+                    <span style="text-decoration: line-through">₹1,199</span>
+                    <span class="highlightMainText"> 61% off</span>
                   </div>
-                  <div class="mar-y-1">
-                    <span class="bold">4.5</span>
+                  <div class="mar-y-2">
+                    <span class="bold">3.5</span>
                     <span class="iconify" data-icon="emojione:star"></span> |
-                    <span class="bold">15</span>
+                    <span class="bold">2 Reviews</span>
                   </div>
-                  <div class="mar-y-1">
+                  <div class="mar-y-2">
                     <span class="bold highlightMainText">Free Delivery</span>
                   </div>
-                  <div class="header_row mar-y-2">
+                  <div class="text-4 mar-y-2">
                     <span
-                      class="iconify text-3 cursor_"
+                      class="iconify cursor_ head-3"
                       data-icon="fluent:delete-28-regular"
                     ></span>
                     <input type="text" name="" id="" />
+                    <span class="iconify cursor_" data-icon="carbon:add"></span>
+                    <button class="btn btn-outline-warning">
+                      Move To Wishlist
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-card xxl-card-width mar-y-2">
+              <div class="card-header card-header-row">
+                <div class="image-div mar-md">
+                  <img
+                    class="card-img"
+                    src="./../assets/filterPage/dress-shirt-1.jpg"
+                  />
+                </div>
+                <div class="mar-md">
+                  <div class="head-3 highlightMainText">Formal Shirt</div>
+                  <p class="text-2 mar-y-2 bold">
+                    Men Slim Fit Solid Formal Shirt
+                  </p>
+                  <div class="text-2">5TH ANFOLD</div>
+                  <div class="text-2 mar-y-2 bold">
+                    <span>₹459</span>
+                    <span style="text-decoration: line-through">₹1,199</span>
+                    <span class="highlightMainText"> 61% off</span>
+                  </div>
+                  <div class="mar-y-2">
+                    <span class="bold">3.5</span>
+                    <span class="iconify" data-icon="emojione:star"></span> |
+                    <span class="bold">2 Reviews</span>
+                  </div>
+                  <div class="mar-y-2">
+                    <span class="bold highlightMainText">Free Delivery</span>
+                  </div>
+                  <div class="text-4 mar-y-2">
                     <span
-                      class="iconify text-3 cursor_"
-                      data-icon="carbon:add"
+                      class="iconify cursor_ head-3"
+                      data-icon="fluent:delete-28-regular"
                     ></span>
+                    <input type="text" name="" id="" />
+                    <span class="iconify cursor_" data-icon="carbon:add"></span>
                     <button class="btn btn-outline-warning">
                       Move To Wishlist
                     </button>
@@ -275,15 +181,15 @@
             </div>
           </div>
           <div class="col col-xl-2">
-            <div class="container_card xl-card-width">
-              <div class="card_header pad-md">
+            <div class="container-card xl-card-width">
+              <div class="card-header pad-md">
                 <div class="head-3 secondory-text">COUPONS</div>
                 <!--- Input with Icon -->
-                <div class="custom_input_one mar-y-2">
+                <div class="custom-input-one mar-y-2">
                   <input
-                    id="apply_coupon"
+                    id="apply-coupon"
                     type="text"
-                    class="input_field"
+                    class="input-field"
                     autocomplete="off"
                     placeholder=" "
                   />
@@ -291,7 +197,7 @@
                     class="iconify icons text-2"
                     data-icon="whh:coupon"
                   ></span>
-                  <label for="apply_coupon" class="input__label text-2"
+                  <label for="apply-coupon" class="input-label text-2"
                     >APPLY COUPON</label
                   >
                 </div>
@@ -314,28 +220,30 @@
                   </div>
                   <div class="totals-item">
                     <label class="price-label bold">Grand Total</label>
-                    <div class="totals-value" id="cart-total">₹1722.00</div>
+                    <div class="totals-value bold" id="cart-total">
+                      ₹1722.00
+                    </div>
                   </div>
-                  <div class="totals-item card_margin_auto_left mar-y-4">
+                  <div class="totals-item card-margin-auto-left mar-y-4">
                     <button class="btn btn-primary text-2">Placed Order</button>
                   </div>
                 </div>
               </div>
-              <div class="card_body text-3 mar-md"></div>
+              <div class="card-body text-3 mar-md"></div>
             </div>
           </div>
         </div>
       </div>
       <div class="modal blck_">
-        <div class="modal_container lg-modal-width mar-y-2">
-          <div class="modal_header pad-md">
+        <div class="modal-container lg-modal-width mar-y-2">
+          <div class="modal-header pad-md">
             <div class="head-2 highlightMainText">Address Management</div>
             <span
               class="iconify modal-close text-3 highlightMainText cursor_"
               data-icon="ant-design:close-circle-outlined"
             ></span>
           </div>
-          <div class="modal_body_ text-2 pad-md">
+          <div class="modal-body text-2 pad-md">
             <div class="head-3 bold highlightMainText">Home</div>
             <div class="displayFlexRow address-mgmt">
               <input type="radio" class="mar-xs" name="homeWork" id="" />
@@ -359,7 +267,7 @@
               </div>
             </div>
           </div>
-          <div class="modal_footer pad-sm">
+          <div class="modal-footer pad-sm">
             <button class="btn btn-primary text-2">+ ADD NEW ADDRESS</button>
           </div>
         </div>

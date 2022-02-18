@@ -4,7 +4,7 @@ const makeNavHeader = () => {
     <div class="header-container">
         <header class="sticky">
           <img
-            class="header_logo"
+            class="header-logo"
             src="./../assets/apna-5.PNG"
             alt="header_logo"
           />

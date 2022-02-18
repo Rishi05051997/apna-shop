@@ -3,7 +3,7 @@
     Release: 0.1
     Description : Cart CSS
 */
-.cart_container {
+.cart-container {
     margin:0;
     padding:0;
     display: grid;
@@ -12,19 +12,19 @@
     
     grid-template-areas: 
     "header"
-    "my_cart_section"
-    "cart_main_section"
+    "my-cart-section"
+    "cart-main-section"
     "footer"
     ;
 }
 /* Header Component For Entire Project */
-.header_container {
+.header-container {
     grid-column: header;
 }
 
 /* Filter Results For Entire Project */
-.my_cart_section {
-    grid-column: my_cart_section;
+.my-cart-section {
+    grid-column: my-cart-section;
     margin: 15rem 0 0;
     display: flex;
     flex-direction: column;
@@ -32,8 +32,8 @@
 }
 
 /* cards section For Entire Project */
-.cart_main_section {
-    grid-column:cart_main_section;
+.cart-main-section {
+    grid-column:cart-main-section;
     display: flex;
     justify-content: center;
 }
@@ -43,9 +43,6 @@
 .footer {
     grid-column:footer;
 }
-
-
-
 /* Totals section  */
 
 .totals-item {

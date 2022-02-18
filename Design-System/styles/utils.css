@@ -2,21 +2,27 @@
 body {
     background-color: #eee;
 }
-.address_header {
+.address-header {
     display: flex;
     justify-content: space-between;
 }
-.address_mgmt{
+.address-mgmt{
     max-width: 30ch;
 }
-
-.header_row input {
+.card-header-row{
+    display: flex;
+}
+.card-header-row input {
     width: 20%;
+}
+.card-header-row svg {
+    width: 2.5rem;
+    height: 2.5rem;
 }
 .col {
     background-color: transparent !important;
 }
-.coupon_box {
+.coupon-box {
     border: 1px solid;
 }
 
@@ -27,7 +33,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-.custom_input_one {
+.custom-input-one {
     width: 100%;
 }
 .overlay {
@@ -53,7 +59,7 @@ body {
     transform: translate(-50%, -50%);
     z-index: 20;
 }
-.header_logo {
+.header-logo {
     height: 8rem;
     width: 8rem;
 }

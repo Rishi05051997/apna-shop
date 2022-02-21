@@ -46,6 +46,9 @@ Here are screenshots that show the E-commerce demo application in use.
 **Product Details Page**
 ![Product Details Page](./Design-System/assets/readme-file/product-details.GIF "Product Details Page")
 
+**Filter Page**
+![Shopping Cart](./Design-System/assets/readme-file/filter-page.PNG "Shopping Cart")
+
 ---
 
 **Login Page**

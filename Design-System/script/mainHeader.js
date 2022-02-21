@@ -62,7 +62,7 @@ const makeNavHeader = () => {
               <label for="name" class="input-label text-2">Name</label>
             </div>
             <li>
-              <a href="#">
+              <a href="./../pages/profilePage.html">
                 <div class="badge-div">
                   <span
                     class="iconify"
